@@ -30,7 +30,15 @@
   "assist": {
     "actions": {
       "source": {
-        "organizeImports": "on"
+        "organizeImports": {
+          "enabled": true,
+          "groups": [
+            {
+              "pattern": "^@/",
+              "group": "internal"
+            }
+          ]
+        }
       }
     }
   }
