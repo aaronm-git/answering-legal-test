@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Answering Legal Test
 
-## Getting Started
+This is a test project for Answering Legal using Next.js app router and Tailwind CSS.
+
+## Candidate Information
+
+- Name: Aaron Molina
+- Email: hire@aaronmolina.me
+- Website: aaronmolina.me
+
+## Project Information
+
+### Project Assignment - Frontend Technical Challenge
+
+We would like you to complete a small project to evaluate your frontend development skills. Please read the following instructions carefully:
+
+#### Requirements
+
+1. **Stack to Use**
+
+   - Next.js
+   - TypeScript
+   - Tailwind CSS
+
+2. **Design**
+
+   - You will receive a Figma design file that you should implement as closely as possible.
+   - The Figma file will also include a link to a Google Drive folder with the images you will need for the design.
+   - Please pay attention to layout, responsiveness, and design details.
+
+3. **Functionality**
+
+   - Implement the page from the design.
+   - Include a form (as shown in the design).
+     - The form does **not** need to be connected to a backend.
+     - On submission, show some kind of confirmation state (e.g., a success message or an alert).
+     - Handle basic validation and error states (e.g., required fields, invalid email).
+
+4. **Deployment**
+   - Deploy the project on Vercel.
+
+#### Evaluation Criteria
+
+We will evaluate based on:
+
+- Code quality (clean, modular, well-structured).
+- Responsiveness and design fidelity (matches the Figma design).
+- Use of TypeScript (types/interfaces, proper typing).
+- Form handling (validation, error states, submission feedback).
+- Attention to detail (small UI/UX touches).
+
+#### Delivery
+
+- Timeframe: kindly submit via email no later than Monday, 9/22 at 9 am EST.
+- Please send us:
+  - The Vercel deployment link.
+  - The GitHub repository link with your code.
+- Send both links by email to nick@answeringlegal.com and giseller@answeringlegal.com.
+
+## Technologies
+
+- [Next.js](https://nextjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Biome](https://biomejs.dev)
+- [Vercel](https://vercel.com)
+
+## Challenges / Project Notes
+
+- In our layout file, we use the Montserrat font from Google Fonts and only include the weights we need to minimize build size.
+
+## Project Structure
+
+```
+answering-legal-test/
+├── app/
+│ ├── page.tsx
+│ └── layout.tsx
+└── public/
+└── images/
+└── ...
+```
+
+## Installation
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Links
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
