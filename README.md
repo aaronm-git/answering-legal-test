@@ -51,7 +51,6 @@ We will evaluate based on:
 
 #### Delivery
 
-- Timeframe: kindly submit via email no later than Monday, 9/22 at 9 am EST.
 - Please send us:
   - The Vercel deployment link.
   - The GitHub repository link with your code.
@@ -92,4 +91,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Links
 
+### Vercel
+ 
+Vercel live deployment link:
+[https://answering-legal-test.vercel.app](https://answering-legal-test.vercel.app)
 
+### GitHub Repository
+
+GitHub repository link:
+[https://github.com/aaronm-git/answering-legal-test](https://github.com/aaronm-git/answering-legal-test)

@@ -3,7 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 const montserratSans = Montserrat({
-  variable: "--font-montserrat-sans",
+  variable: "--font-sans",
   subsets: ["latin"],
   weight: ["400", "600", "700"], //NOTE: To minimize build size, we only include the weights we need
 });
@@ -20,10 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${montserratSans.variable} antialiased`}>
-        {children}
-      </body>
+    <html lang="en" className={`${montserratSans.variable}`}>
+      <body className="antialiased font-sans">{children}</body>
     </html>
   );
 }
