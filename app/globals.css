@@ -15,54 +15,65 @@
 
 @theme {
   --color-primary: var(--color-royal-blue);
-  --color-secondary: var(--color-turquoise);
-  --color-off-white: var(--color-off-white);
+  --color-secondary: var(--color-white);
+  --color-light: var(--color-off-white);
+  --color-dark: var(--color-black);
+
+  --color-royal-blue: var(--color-royal-blue);
+  --color-turquoise: var(--color-turquoise);
+  --color-navy-blue: var(--color-navy-blue);
+  --color-midnight-blue: var(--color-midnight-blue);
+  --color-pale-blue: var(--color-pale-blue);
+  --color-pale-cyan: var(--color-pale-cyan);
+  --color-gray: var(--color-gray);
   --color-black: var(--color-black);
+  --color-off-white: var(--color-off-white);
+  --color-white: var(--color-white);
 }
 
 @layer base {
   body {
-    @apply bg-off-white text-black;
+    @apply bg-light text-dark;
   }
 
   /* Typography Classes */
   h1,
   .h1 {
-    @apply font-bold text-6xl leading-tight;
+    @apply text-6xl leading-tight font-bold;
   }
 
   h2,
   .h2 {
-    @apply font-bold text-3xl leading-tight;
+    @apply text-3xl leading-tight font-bold;
   }
 
   h3,
   .h3 {
-    @apply font-bold text-2xl leading-tight;
+    @apply text-2xl leading-tight font-bold;
   }
 
   h4,
   .subtitle1 {
-    @apply font-semibold text-2xl leading-tight;
+    @apply text-2xl leading-tight font-semibold;
   }
 
   h5,
   .subtitle2 {
-    @apply font-semibold text-base leading-tight;
+    @apply text-base leading-tight font-semibold;
   }
 
   body,
   p,
   .body {
-    @apply font-normal text-base leading-relaxed;
+    @apply text-base leading-relaxed font-normal;
   }
 
   .body2 {
-    @apply font-normal text-xl leading-loose;
+    @apply text-xl leading-loose font-normal;
   }
 
   small,
   .small {
-    @apply font-semibold text-xs leading-tight;
+    @apply text-xs leading-tight font-semibold;
   }
 }
