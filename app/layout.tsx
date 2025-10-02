@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Link from "next/link";
 
 const montserratSans = Montserrat({
   variable: "--font-sans",

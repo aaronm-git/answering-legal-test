@@ -17,19 +17,16 @@ We would like you to complete a small project to evaluate your frontend developm
 #### Requirements
 
 1. **Stack to Use**
-
    - Next.js
    - TypeScript
    - Tailwind CSS
 
 2. **Design**
-
    - You will receive a Figma design file that you should implement as closely as possible.
    - The Figma file will also include a link to a Google Drive folder with the images you will need for the design.
    - Please pay attention to layout, responsiveness, and design details.
 
 3. **Functionality**
-
    - Implement the page from the design.
    - Include a form (as shown in the design).
      - The form does **not** need to be connected to a backend.
@@ -81,18 +78,24 @@ answering-legal-test/
 
 ## Installation
 
-First, run the development server:
+First, install the dependencies:
 
 ```bash
 npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the working application.
 
 ## Links
 
 ### Vercel
- 
+
 Vercel live deployment link:
 [https://answering-legal-test.vercel.app](https://answering-legal-test.vercel.app)
 

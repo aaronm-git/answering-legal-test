@@ -29,6 +29,12 @@
   --color-off-white: var(--color-off-white);
 }
 
+@layer components {
+  .text-link {
+    @apply text-primary hover:text-navy-blue font-semibold transition-colors duration-300;
+  }
+}
+
 @layer utilities {
   .shadow {
     box-shadow: 2.09px 2.09px 4.17px 0px #00000040;
@@ -43,12 +49,12 @@
   /* Typography Classes */
   h1,
   .h1 {
-    @apply text-6xl font-bold;
+    @apply text-[32px] font-bold lg:text-6xl;
   }
 
   h2,
   .h2 {
-    @apply text-3xl font-bold;
+    @apply text-[32px] font-bold;
   }
 
   h3,
@@ -66,6 +72,11 @@
     @apply text-base font-semibold;
   }
 
+  h6,
+  .subtitle3 {
+    @apply text-base font-bold;
+  }
+
   body,
   p,
   .body {
@@ -73,11 +84,16 @@
   }
 
   .body2 {
-    @apply text-xl font-normal;
+    @apply text-xl leading-8 font-normal;
   }
 
   small,
   .small {
     @apply text-xs font-semibold;
+  }
+
+  a,
+  button {
+    @apply focus:ring-primary/50 cursor-pointer focus:ring-2 focus:ring-offset-2 focus:outline-none;
   }
 }
