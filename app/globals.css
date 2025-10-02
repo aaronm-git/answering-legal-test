@@ -46,50 +46,45 @@
     @apply bg-light text-dark;
   }
 
-  /* Typography Classes */
+  /* Typography Classes - Montserrat Font Family */
   h1,
   .h1 {
-    @apply text-[32px] font-bold lg:text-6xl;
+    @apply font-sans text-[32px] lg:text-5xl font-bold;
   }
 
   h2,
   .h2 {
-    @apply text-[32px] font-bold;
+    @apply font-sans lg:text-[32px] font-bold;
   }
 
   h3,
   .h3 {
-    @apply text-2xl font-bold;
+    @apply font-sans text-2xl font-bold;
   }
 
   h4,
   .subtitle1 {
-    @apply text-2xl font-semibold;
+    @apply font-sans text-2xl font-semibold;
   }
 
   h5,
   .subtitle2 {
-    @apply text-base font-semibold;
-  }
-
-  h6,
-  .subtitle3 {
-    @apply text-base font-bold;
+    @apply font-sans text-base font-semibold;
   }
 
   body,
   p,
-  .body {
-    @apply text-base font-normal;
+  .body1 {
+    @apply font-sans text-base font-normal;
   }
 
   .body2 {
-    @apply text-xl leading-8 font-normal;
+    @apply font-sans text-xl leading-8 font-normal;
   }
 
   small,
   .small {
-    @apply text-xs font-semibold;
+    @apply font-sans text-xs font-semibold;
   }
 
   a,
