@@ -38,7 +38,7 @@ function NavBar({ children }: { children: React.ReactNode }) {
       }}
     >
       <div className='bg-[#f6f5f5] lg:gap-4'>
-        <div className='flex w-full flex-col lg:container lg:mx-auto lg:gap-4'>
+        <div className='flex w-full flex-col lg:mx-auto lg:gap-4'>
           {children}
         </div>
       </div>
@@ -146,7 +146,7 @@ function MenuDropdownComponent({
         </div>
 
         {isOpen && (
-          <div className='absolute top-full left-0 mt-2 min-w-[400px] rounded-2xl bg-white p-6 shadow-lg'>
+          <div className='absolute top-full left-0 z-50 mt-2 min-w-[400px] rounded-2xl bg-white p-6 shadow-lg'>
             <div className='flex flex-col gap-4'>{children}</div>
           </div>
         )}
