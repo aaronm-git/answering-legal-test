@@ -8,7 +8,7 @@
   --color-pale-blue: #cddffa;
   --color-pale-cyan: #d2edef;
   --color-gray: #999999;
-  --color-black: #141414;
+  --color-dark: #141414;
   --color-off-white: #f7f5f5;
   --color-white: #ffffff;
 }
@@ -17,7 +17,7 @@
   --color-primary: var(--color-royal-blue);
   --color-secondary: var(--color-white);
   --color-light: var(--color-off-white);
-  --color-dark: var(--color-black);
+  --color-dark: var(--color-dark);
 
   --color-royal-blue: var(--color-royal-blue);
   --color-turquoise: var(--color-turquoise);
@@ -26,9 +26,13 @@
   --color-pale-blue: var(--color-pale-blue);
   --color-pale-cyan: var(--color-pale-cyan);
   --color-gray: var(--color-gray);
-  --color-black: var(--color-black);
   --color-off-white: var(--color-off-white);
-  --color-white: var(--color-white);
+}
+
+@layer utilities {
+  .shadow {
+    box-shadow: 2.09px 2.09px 4.17px 0px #00000040;
+  }
 }
 
 @layer base {
@@ -39,41 +43,41 @@
   /* Typography Classes */
   h1,
   .h1 {
-    @apply text-6xl leading-tight font-bold;
+    @apply text-6xl font-bold;
   }
 
   h2,
   .h2 {
-    @apply text-3xl leading-tight font-bold;
+    @apply text-3xl font-bold;
   }
 
   h3,
   .h3 {
-    @apply text-2xl leading-tight font-bold;
+    @apply text-2xl font-bold;
   }
 
   h4,
   .subtitle1 {
-    @apply text-2xl leading-tight font-semibold;
+    @apply text-2xl font-semibold;
   }
 
   h5,
   .subtitle2 {
-    @apply text-base leading-tight font-semibold;
+    @apply text-base font-semibold;
   }
 
   body,
   p,
   .body {
-    @apply text-base leading-relaxed font-normal;
+    @apply text-base font-normal;
   }
 
   .body2 {
-    @apply text-xl leading-loose font-normal;
+    @apply text-xl font-normal;
   }
 
   small,
   .small {
-    @apply text-xs leading-tight font-semibold;
+    @apply text-xs font-semibold;
   }
 }
