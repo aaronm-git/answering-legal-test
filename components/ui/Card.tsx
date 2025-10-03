@@ -1,7 +1,7 @@
-import cn from "@/lib/utils/cn";
-import Image from "next/image";
-import dayjs from "dayjs";
 import Article_img_placeholder from "@/images/Article_img_placeholder.jpg";
+import cn from "@/lib/utils/cn";
+import dayjs from "dayjs";
+import Image from "next/image";
 
 interface CardProps {
   children: React.ReactNode;
@@ -89,7 +89,7 @@ function CardArticleHeader({
       <p className='text-primary text-base font-semibold uppercase'>
         {category}
       </p>
-      <div className='border-turquoise border-l-2 pl-4'>
+      <div className='border-teal border-l-2 pl-4'>
         <p className='text-gray subtitle2'>{formattedDate}</p>
         <h3 className='subtitle1 line-clamp-2 text-black' title={title}>
           {title}

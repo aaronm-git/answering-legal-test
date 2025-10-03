@@ -100,7 +100,7 @@ function MenuLinkComponent({
       </div>
 
       {/* Mobile Link */}
-      <div className='border-turquoise border-b lg:hidden'>
+      <div className='border-teal border-b lg:hidden'>
         <Link
           href={href}
           className='block py-6 text-[28px] font-bold text-white'
@@ -141,7 +141,7 @@ function MenuDropdownComponent({
           </button>
 
           {isOpen && (
-            <div className='bg-turquoise absolute -bottom-1 left-0 h-1 w-full rounded-[8px] transition-all duration-300'></div>
+            <div className='bg-teal absolute -bottom-1 left-0 h-1 w-full rounded-[8px] transition-all duration-300'></div>
           )}
         </div>
 
@@ -153,7 +153,7 @@ function MenuDropdownComponent({
       </div>
 
       {/* Mobile Dropdown */}
-      <div className='border-turquoise border-b lg:hidden'>
+      <div className='border-teal border-b lg:hidden'>
         <button
           type='button'
           onClick={() => setOpenDropdown(isOpen ? null : id)}
@@ -203,7 +203,7 @@ function DropdownItemComponent({
       {/* Mobile Dropdown Item */}
       <Link
         href={href}
-        className='text-turquoise py-3 text-[20px] font-normal lg:hidden'
+        className='text-teal py-3 text-[20px] font-normal lg:hidden'
       >
         {title}
       </Link>
@@ -258,7 +258,7 @@ function MobileCloseButtonComponent() {
       type='button'
       onClick={() => setMobileMenuOpen(false)}
       aria-label='Close menu'
-      className='hover:text-turquoise text-white transition-colors'
+      className='hover:text-teal text-white transition-colors'
     >
       <MdClose className='size-8' />
     </button>

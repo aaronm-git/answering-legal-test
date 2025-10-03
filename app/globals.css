@@ -2,7 +2,7 @@
 
 :root {
   --color-royal-blue: #0360e6;
-  --color-turquoise: #3cced7;
+  --color-teal: #3cced7;
   --color-navy-blue: #162b53;
   --color-midnight-blue: #161641;
   --color-pale-blue: #cddffa;
@@ -20,7 +20,7 @@
   --color-dark: var(--color-dark);
 
   --color-royal-blue: var(--color-royal-blue);
-  --color-turquoise: var(--color-turquoise);
+  --color-teal: var(--color-teal);
   --color-navy-blue: var(--color-navy-blue);
   --color-midnight-blue: var(--color-midnight-blue);
   --color-pale-blue: var(--color-pale-blue);
@@ -49,12 +49,12 @@
   /* Typography Classes - Montserrat Font Family */
   h1,
   .h1 {
-    @apply font-sans text-[32px] lg:text-5xl font-bold;
+    @apply font-sans text-[32px] font-bold lg:text-5xl;
   }
 
   h2,
   .h2 {
-    @apply font-sans text-2xl lg:text-[32px] font-bold;
+    @apply font-sans text-2xl font-bold lg:text-[32px];
   }
 
   h3,
@@ -64,7 +64,7 @@
 
   h4,
   .subtitle1 {
-    @apply font-sans lg:text-2xl font-semibold;
+    @apply font-sans font-semibold lg:text-2xl;
   }
 
   h5,

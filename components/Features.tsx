@@ -1,9 +1,9 @@
-import React from "react";
-import Card from "./ui/Card";
 import AnswerLegalIcon from "@/images/AL_2ColorIcon-AnsweringService.svg";
 import ChatbotIcon from "@/images/AL_2ColorIcon-Chatbot.svg";
 import LVCv2Icon from "@/images/AL_2ColorIcon-LVCv2.svg";
 import Image, { StaticImageData } from "next/image";
+import Card from "./ui/Card";
+import Divider from "./ui/Divider";
 
 interface Feature {
   title: string;
@@ -13,19 +13,19 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    title: "Legal answering service",
+    title: "Legal answering <br /> service",
     description:
       "With 24/7 legal intake, you'll never miss a potential client's call.",
     icon: AnswerLegalIcon
   },
   {
-    title: "AI intake chatbot",
+    title: "AI intake <br /> chatbot",
     description:
       "Turn web leads into clients with a chatbot powered by the latest in AI technology.",
     icon: ChatbotIcon
   },
   {
-    title: "Live translation services",
+    title: "Live translation <br /> services",
     description:
       "Break through the language barrier and schedule video conferences with live interpreters.",
     icon: LVCv2Icon
@@ -35,13 +35,13 @@ const features: Feature[] = [
 export default function Features() {
   return (
     <section className='relative container mx-auto px-4 py-16 lg:-mt-[174px] lg:pt-0 lg:pb-16'>
-      <h2 className='h2 mb-6 text-center text-dark lg:text-white'>
+      <h2 className='h2 text-dark mb-6 text-center lg:text-white'>
         Here&apos;s what we can do for your law firm
       </h2>
 
-      <div className='bg-turquoise mb-8 h-[2px] w-full rounded-[10px]'></div>
+      <Divider className='mb-8 rounded-[10px]' />
 
-      <div className='grid grid-cols-1 gap-8 text-center md:grid-cols-3 max-lg:px-[22px]'>
+      <div className='grid grid-cols-1 gap-8 text-center max-lg:px-[22px] md:grid-cols-3'>
         {features.map((feature) => (
           <Card key={feature.title} className='rounded-[20px] px-4 py-8 shadow'>
             <Card.Body className='flex flex-col items-center gap-6'>
@@ -52,8 +52,11 @@ export default function Features() {
                 height={100}
                 className='size-[100px]'
               />
-              <h3 className='h2'>{feature.title}</h3>
-              <div className='bg-turquoise h-[2px] w-full rounded-[5px]'></div>
+              <h3
+                className='h2'
+                dangerouslySetInnerHTML={{ __html: feature.title }}
+              ></h3>
+              <Divider className='rounded-[5px]' />
               <p className='subtitle2'>{feature.description}</p>
             </Card.Body>
           </Card>
