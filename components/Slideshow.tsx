@@ -2,6 +2,7 @@ import ArrowLeft from "@/images/Left_Arrow.svg";
 import ArrowRight from "@/images/Right_Arrow.svg";
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
+import Button from "./ui/Button";
 import Card from "./ui/Card";
 import EmblaSlideshow, {
   Buttons,
@@ -12,7 +13,6 @@ import EmblaSlideshow, {
   Slide,
   SlidesContainer
 } from "./ui/EmblaSlideshow";
-import Button from "./ui/Button";
 
 interface SlideshowPosts {
   title: string;
@@ -60,13 +60,13 @@ function Slideshow({ posts, title, cta, className }: SlideshowProps) {
           </Buttons>
         </Controls>
         <EmblaSlideshowContainer className='mx-auto lg:max-w-[90%]'>
-          <SlidesContainer className='flex items-stretch -m-2'>
+          <SlidesContainer className='-m-2'>
             {posts.map((post) => (
               <Slide
                 key={post.slug}
-                className='h-full w-full lg:w-[calc(100%/3)] lg:min-w-[320px] flex-none p-4'
+                className='w-full flex-none p-4 lg:w-[calc(100%/3)] lg:min-w-[320px]'
               >
-                <Card variant='article' className='h-full'>
+                <Card variant='article' className='flex h-full flex-col'>
                   <Card.Image image={post.image} alt={post.title} />
                   <Card.ArticleHeader
                     title={post.title}
