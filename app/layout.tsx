@@ -1,8 +1,8 @@
+import Nav from "@/components/Nav";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
-import Nav from "@/components/Nav";
-import Link from "next/link";
 
 const montserratSans = Montserrat({
   variable: "--font-sans",
@@ -26,6 +26,7 @@ export default function RootLayout({
       <body className='relative font-sans antialiased'>
         <Nav />
         {children}
+        <Toaster position='top-center' richColors />
       </body>
     </html>
   );

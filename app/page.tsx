@@ -1,10 +1,11 @@
+import ContactForm from "@/components/ContactForm";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import Slideshow from "@/components/Slideshow";
 import SplitSection from "@/components/SplitSection";
+import PlaceholderImg from "@/images/Article_img_placeholder.jpg";
 import CRMGraphic from "@/images/CRM-Graphic.png";
 import ReceptionistImg from "@/images/Receptionist_IMG.png";
-import Slideshow from "@/components/Slideshow";
-import PlaceholderImg from "@/images/Article_img_placeholder.jpg";
 
 export default function Home() {
   return (
@@ -109,6 +110,8 @@ export default function Home() {
           }
         ]}
       />
+
+      <ContactForm />
     </main>
   );
 }

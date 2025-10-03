@@ -3,7 +3,7 @@
 :root {
   --color-royal-blue: #0360e6;
   --color-teal: #3cced7;
-  --color-navy-blue: #162b53;
+  --color-navy-blue: #161641;
   --color-midnight-blue: #161641;
   --color-pale-blue: #cddffa;
   --color-pale-cyan: #d2edef;
@@ -32,6 +32,27 @@
 @layer components {
   .text-link {
     @apply text-primary hover:text-navy-blue font-semibold transition-colors duration-300;
+  }
+
+  /* Form Field Styles */
+  .form-label {
+    @apply text-navy-blue mb-2 block font-semibold;
+  }
+
+  .form-input {
+    @apply border-dark w-full rounded-lg border bg-[#F7F5F5] px-4 py-2 placeholder:text-[#999999];
+  }
+
+  .form-input-default {
+    @apply border-gray-300;
+  }
+
+  .form-input-error {
+    @apply border-2 border-[#C43030];
+  }
+
+  .form-error-message {
+    @apply mb-2 font-semibold text-[#C43030];
   }
 }
 
@@ -140,7 +161,8 @@
   }
 
   a,
-  button {
+  button,
+  input {
     @apply focus:ring-primary/75 relative cursor-pointer focus:ring-2 focus:ring-offset-0 focus:outline-none;
   }
 }

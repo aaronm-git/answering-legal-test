@@ -8,6 +8,8 @@ interface ButtonProps {
   children: React.ReactNode;
   href?: string;
   className?: string;
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 }
 
 type LinkButtonProps = ButtonProps & LinkProps;
@@ -40,7 +42,8 @@ export default function Button(props: LinkButtonProps | RegularButtonProps) {
   return (
     <button
       className={cn(variantClasses, className)}
-      type='button'
+      type={rest.type || "button"}
+      disabled={rest.disabled}
       {...(rest as ButtonHTMLAttributes<HTMLButtonElement>)}
     >
       {children}
