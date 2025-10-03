@@ -1,6 +1,7 @@
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import cn from "@/lib/utils/cn";
+import PlaceholderImg from "@/images/Article_img_placeholder.jpg";
 import Link from "next/link";
 
 const StyleGuideCard = ({
@@ -43,7 +44,7 @@ export default function page() {
         <h2 className='subtitle1'>Cards</h2>
         <div className='flex gap-4'>
           <Card variant='article' className='max-w-md'>
-            <Card.Image />
+            <Card.Image image={PlaceholderImg} />
             <Card.ArticleHeader
               title='How Viable Is Remote Work For Lawyers?'
               date='June 6, 2024'

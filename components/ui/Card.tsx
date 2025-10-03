@@ -1,7 +1,7 @@
 import Article_img_placeholder from "@/images/Article_img_placeholder.jpg";
 import cn from "@/lib/utils/cn";
 import dayjs from "dayjs";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface CardProps {
   children: React.ReactNode;
@@ -50,11 +50,11 @@ function CardFooter({ children, className }: CardProps) {
 
 function CardImage({
   className,
-  src,
+  image,
   alt
 }: {
   className?: string;
-  src?: string;
+  image: StaticImageData | string;
   alt?: string;
 }) {
   return (
@@ -65,7 +65,7 @@ function CardImage({
       )}
     >
       <Image
-        src={src || Article_img_placeholder}
+        src={image || Article_img_placeholder}
         alt={alt || ""}
         fill
         className='object-cover'

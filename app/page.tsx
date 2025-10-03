@@ -4,6 +4,8 @@ import SplitSection from "@/components/SplitSection";
 import CRMGraphic from "@/images/CRM-Graphic.png";
 import ReceptionistImg from "@/images/Receptionist_IMG.png";
 import Slideshow from "@/components/Slideshow";
+import PlaceholderImg from "@/images/Article_img_placeholder.jpg";
+
 export default function Home() {
   return (
     <main>
@@ -43,7 +45,70 @@ export default function Home() {
         }}
       />
 
-      <Slideshow />
+      <Slideshow
+        title='Want to learn more? Read our articles on legal intake.'
+        cta={{
+          text: "Read our articles",
+          href: "/",
+          variant: "primary"
+        }}
+        posts={[
+          {
+            title: "How Viable Is Remote Work For Lawyers?",
+            description:
+              "This month on the Answering Legal blog, we'll be covering remote work in the legal world. Since the rapid adaptations required by quarantine during the pandemic, many law firms have had to rethink their traditional office-based approach to work.",
+            image: PlaceholderImg,
+            category: "LAWYER WELLNESS",
+            date: "2024-06-06",
+            slug: "how-viable-is-remote-work-for-lawyers"
+          },
+          {
+            title: "The Future of Legal Technology: AI and Automation",
+            description:
+              "Artificial intelligence is revolutionizing the legal profession at an unprecedented pace. From document review to case prediction, AI tools are helping lawyers work more efficiently while maintaining the highest standards of accuracy.",
+            image: PlaceholderImg,
+            category: "LEGAL TECH",
+            date: "2024-05-28",
+            slug: "the-future-of-legal-technology-ai-and-automation"
+          },
+          {
+            title: "Client Communication Best Practices for Modern Law Firms",
+            description:
+              "Effective client communication has always been crucial for law firms, but in today's digital age, the expectations and methods have evolved significantly. Learn how to maintain strong client relationships through modern communication strategies.",
+            image: PlaceholderImg,
+            category: "CLIENT RELATIONS",
+            date: "2024-05-15",
+            slug: "client-communication-best-practices-for-modern-law-firms"
+          },
+          {
+            title: "Cybersecurity Essentials for Law Firms",
+            description:
+              "Law firms are increasingly becoming targets for cybercriminals due to the sensitive nature of the data they handle. Understanding the latest cybersecurity threats and implementing robust protection measures is essential for any modern practice.",
+            image: PlaceholderImg,
+            category: "SECURITY",
+            date: "2024-05-02",
+            slug: "cybersecurity-essentials-for-law-firms"
+          },
+          {
+            title: "Building a Sustainable Legal Practice in 2024",
+            description:
+              "Sustainability isn't just about environmental impact—it's about creating a law practice that can thrive long-term. Discover strategies for building resilience, maintaining work-life balance, and ensuring your practice remains competitive.",
+            image: PlaceholderImg,
+            category: "PRACTICE MANAGEMENT",
+            date: "2024-04-18",
+            slug: "building-a-sustainable-legal-practice-in-2024"
+          },
+          {
+            title: "The Rise of Alternative Legal Service Providers",
+            description:
+              "The legal industry is experiencing a significant shift with the emergence of alternative legal service providers. Traditional law firms must adapt to remain competitive in this evolving landscape.",
+            image: PlaceholderImg,
+            category: "INDUSTRY TRENDS",
+            date: "2024-04-05",
+            slug: "the-rise-of-alternative-legal-service-providers"
+          }
+        ]}
+      />
     </main>
   );
 }
