@@ -63,6 +63,11 @@ We will evaluate based on:
 ## Challenges / Project Notes
 
 - In our layout file, we use the Montserrat font from Google Fonts and only include the weights we need to minimize build size.
+- There are some misconfiguration and many inconsistencies in the design file. I highly recommend a more detailed design file next time and synchronize the figma file settings to mirror accurate font sizes and spacing. I can add more detail over the phone if you like.
+- The form submits with a success message or error message when the form is submitted using a toast notification.
+- The form uses a server action to submit the form data.
+- The form uses a zod schema to validate the form data.
+- I used reusable components architecture to build the project so that components can be reused across the project.
 
 ## Project Structure
 
