@@ -54,7 +54,7 @@
 
   h2,
   .h2 {
-    @apply font-sans lg:text-[32px] font-bold;
+    @apply font-sans text-2xl lg:text-[32px] font-bold;
   }
 
   h3,
@@ -64,7 +64,7 @@
 
   h4,
   .subtitle1 {
-    @apply font-sans text-2xl font-semibold;
+    @apply font-sans lg:text-2xl font-semibold;
   }
 
   h5,
@@ -74,7 +74,7 @@
 
   body,
   p,
-  .body1 {
+  .body {
     @apply font-sans text-base font-normal;
   }
 
