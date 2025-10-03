@@ -160,6 +160,10 @@
     @apply font-sans text-xs font-semibold;
   }
 
+  .caption {
+    @apply text-center font-sans text-xs leading-none font-extrabold tracking-normal uppercase;
+  }
+
   a,
   button,
   input {

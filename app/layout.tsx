@@ -1,4 +1,5 @@
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { Toaster } from "sonner";
@@ -7,7 +8,7 @@ import "./globals.css";
 const montserratSans = Montserrat({
   variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["400", "600", "700"] //NOTE: To minimize build size, we only include the weights we need
+  weight: ["400", "600", "700"]
 });
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Toaster position='top-center' richColors />
+        <Footer />
       </body>
     </html>
   );
