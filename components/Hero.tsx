@@ -5,13 +5,13 @@ import Button from "./ui/Button";
 
 export default function Hero() {
   return (
-    <div className='max-lg:bg-midnight-blue relative lg:py-16 lg:pb-2'>
+    <div className='max-lg:bg-midnight-blue relative lg:h-[750px] lg:py-16 lg:pb-2'>
       <Image
         src={HeroImage}
         alt='Hero'
         width={1440}
         height={750}
-        className='absolute inset-0 hidden h-[750px] w-full object-cover lg:block'
+        className='absolute inset-0 hidden h-full w-full object-cover lg:block'
       />
       <Image
         src={LandingHeroMobile}
