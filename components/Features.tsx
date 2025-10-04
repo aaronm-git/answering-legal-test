@@ -11,32 +11,11 @@ interface Feature {
   icon: StaticImageData;
 }
 
-const features: Feature[] = [
-  {
-    title: "Legal answering <br /> service",
-    description:
-      "With 24/7 legal intake, you'll never miss a potential client's call.",
-    icon: AnswerLegalIcon
-  },
-  {
-    title: "AI intake <br /> chatbot",
-    description:
-      "Turn web leads into clients with a chatbot powered by the latest in AI technology.",
-    icon: ChatbotIcon
-  },
-  {
-    title: "Live translation <br /> services",
-    description:
-      "Break through the language barrier and schedule video conferences with live interpreters.",
-    icon: LVCv2Icon
-  }
-];
-
-export default function Features() {
+export default function Features({ features, title }: { features: Feature[], title: string }) {
   return (
     <section className='relative container mx-auto px-4 py-16 lg:-mt-[174px] lg:pt-0 lg:pb-16'>
       <h2 className='h2 text-dark mb-6 text-center lg:text-white'>
-        Here&apos;s what we can do for your law firm
+        {title}
       </h2>
 
       <Divider className='mb-8 rounded-[10px]' />

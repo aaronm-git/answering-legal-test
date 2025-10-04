@@ -3,15 +3,53 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Slideshow from "@/components/Slideshow";
 import SplitSection from "@/components/SplitSection";
+import AnswerLegalIcon from "@/images/AL_2ColorIcon-AnsweringService.svg";
+import ChatbotIcon from "@/images/AL_2ColorIcon-Chatbot.svg";
+import LVCv2Icon from "@/images/AL_2ColorIcon-LVCv2.svg";
 import PlaceholderImg from "@/images/Article_img_placeholder.jpg";
 import CRMGraphic from "@/images/CRM-Graphic.png";
+import HeroImage from "@/images/LandingHero.jpg";
+import LandingHeroMobile from "@/images/LandingHeroMobile.jpg";
 import ReceptionistImg from "@/images/Receptionist_IMG.png";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <Features />
+      <Hero
+        image={HeroImage}
+        mobileImage={LandingHeroMobile}
+        title="We're more than an answering service"
+        description='Answering Legal has everything you need to make sure your firm never misses another opportunity.'
+        cta={{ text: "See our pricing", href: "/" }}
+        rating={{
+          score: "4.84",
+          stars: "★★★★★",
+          reviewCount: "230"
+        }}
+      />
+      <Features
+        title="Here's what we can do for your law firm"
+        features={[
+          {
+            title: "Legal answering <br /> service",
+            description:
+              "With 24/7 legal intake, you'll never miss a potential client's call.",
+            icon: AnswerLegalIcon
+          },
+          {
+            title: "AI intake <br /> chatbot",
+            description:
+              "Turn web leads into clients with a chatbot powered by the latest in AI technology.",
+            icon: ChatbotIcon
+          },
+          {
+            title: "Live translation <br /> services",
+            description:
+              "Break through the language barrier and schedule video conferences with live interpreters.",
+            icon: LVCv2Icon
+          }
+        ]}
+      />
 
       <SplitSection
         imagePosition='left'
